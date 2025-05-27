@@ -6,20 +6,56 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		30A84E182DDD1C17004AD227 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30A84DC82DDCE639004AD227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30A84DCF2DDCE639004AD227;
+			remoteInfo = ClutterBug;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		30A84DD02DDCE639004AD227 /* ClutterBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClutterBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30A84E142DDD1C17004AD227 /* ClutterBugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClutterBugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		30A84DF32DDCEF8E004AD227 /* Exceptions for "ClutterBug" folder in "ClutterBug" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 30A84DCF2DDCE639004AD227 /* ClutterBug */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		30A84DD22DDCE639004AD227 /* ClutterBug */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				30A84DF32DDCEF8E004AD227 /* Exceptions for "ClutterBug" folder in "ClutterBug" target */,
+			);
 			path = ClutterBug;
+			sourceTree = "<group>";
+		};
+		30A84E152DDD1C17004AD227 /* ClutterBugTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ClutterBugTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		30A84DCD2DDCE639004AD227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30A84E112DDD1C17004AD227 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				30A84DD22DDCE639004AD227 /* ClutterBug */,
+				30A84E152DDD1C17004AD227 /* ClutterBugTests */,
 				30A84DD12DDCE639004AD227 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				30A84DD02DDCE639004AD227 /* ClutterBug.app */,
+				30A84E142DDD1C17004AD227 /* ClutterBugTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +108,29 @@
 			productReference = 30A84DD02DDCE639004AD227 /* ClutterBug.app */;
 			productType = "com.apple.product-type.application";
 		};
+		30A84E132DDD1C17004AD227 /* ClutterBugTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30A84E1A2DDD1C17004AD227 /* Build configuration list for PBXNativeTarget "ClutterBugTests" */;
+			buildPhases = (
+				30A84E102DDD1C17004AD227 /* Sources */,
+				30A84E112DDD1C17004AD227 /* Frameworks */,
+				30A84E122DDD1C17004AD227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30A84E192DDD1C17004AD227 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				30A84E152DDD1C17004AD227 /* ClutterBugTests */,
+			);
+			name = ClutterBugTests;
+			packageProductDependencies = (
+			);
+			productName = ClutterBugTests;
+			productReference = 30A84E142DDD1C17004AD227 /* ClutterBugTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +143,10 @@
 				TargetAttributes = {
 					30A84DCF2DDCE639004AD227 = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					30A84E132DDD1C17004AD227 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 30A84DCF2DDCE639004AD227;
 					};
 				};
 			};
@@ -100,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				30A84DCF2DDCE639004AD227 /* ClutterBug */,
+				30A84E132DDD1C17004AD227 /* ClutterBugTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		30A84DCE2DDCE639004AD227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30A84E122DDD1C17004AD227 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30A84E102DDD1C17004AD227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30A84E192DDD1C17004AD227 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30A84DCF2DDCE639004AD227 /* ClutterBug */;
+			targetProxy = 30A84E182DDD1C17004AD227 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		30A84DDB2DDCE639004AD227 /* Debug */ = {
@@ -256,6 +344,9 @@
 				DEVELOPMENT_TEAM = 93K3WD3GRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClutterBug/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ClutterBug needs access to  your camera to add images of your inventory and storage areas.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "ClutterBug needs access to  your photo album to add images your inventory and storage areas.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +375,9 @@
 				DEVELOPMENT_TEAM = 93K3WD3GRX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClutterBug/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ClutterBug needs access to  your camera to add images of your inventory and storage areas.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "ClutterBug needs access to  your photo album to add images your inventory and storage areas.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +393,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30A84E1B2DDD1C17004AD227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93K3WD3GRX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaos.david.ClutterBug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClutterBug.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClutterBug";
+			};
+			name = Debug;
+		};
+		30A84E1C2DDD1C17004AD227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93K3WD3GRX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaos.david.ClutterBug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClutterBug.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClutterBug";
 			};
 			name = Release;
 		};
@@ -319,6 +449,15 @@
 			buildConfigurations = (
 				30A84DDE2DDCE639004AD227 /* Debug */,
 				30A84DDF2DDCE639004AD227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30A84E1A2DDD1C17004AD227 /* Build configuration list for PBXNativeTarget "ClutterBugTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30A84E1B2DDD1C17004AD227 /* Debug */,
+				30A84E1C2DDD1C17004AD227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
